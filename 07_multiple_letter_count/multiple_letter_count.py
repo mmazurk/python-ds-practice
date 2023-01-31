@@ -7,3 +7,9 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
+    returnValue = {};
+    for letter in phrase:
+        if letter in returnValue:
+            break;
+        returnValue[letter] = phrase.count(letter)
+    return returnValue
