@@ -7,3 +7,8 @@ def vowel_count(phrase):
         >>> vowel_count('HOW ARE YOU? i am great!') 
         {'o': 2, 'a': 3, 'e': 2, 'u': 1, 'i': 1}
     """
+    # iterate through the letters
+    # check if it has overlap with 'aeiou'
+    # if it does, add a dict entry and a count of the number of times
+    return {letter: phrase.lower().count(letter) for letter in phrase.lower() if letter in set('aeiou')}
+   

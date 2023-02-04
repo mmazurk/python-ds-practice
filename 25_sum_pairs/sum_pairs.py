@@ -21,3 +21,19 @@ def sum_pairs(nums, goal):
         >>> sum_pairs([11, 20, 4, 2, 1, 5], 100)
         ()
     """
+    for number in nums:
+        for iteration in range(len(nums) - 1):
+            if number + nums[iteration + 1] == goal:
+                return (number, nums[iteration + 1])
+    return ()
+
+    """
+    The answer to this is a mathematical trick that I did't know. 
+    You subtract each element from the goal and then add the element to the set;
+    as you do this, you check if the difference is already in the set.
+    If the difference is already in the set you return the element and difference. 
+    
+    I would have never figured this out.
+    """
+
+
