@@ -22,3 +22,6 @@ def valid_parentheses(parens):
         >>> valid_parentheses(")()(")
         False
     """
+		# count number of left 
+		# count number of tight right
+		# see if equal

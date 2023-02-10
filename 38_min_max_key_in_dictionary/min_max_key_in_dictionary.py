@@ -9,3 +9,7 @@ def min_max_keys(d):
         >>> min_max_keys({"apple": "red", "cherry": "red", "berry": "blue"})
         ('apple', 'cherry')
     """
+    # extract keys from dict, put in set, and order them. Then return first and last as tuple. 
+    dict_keys = list(d.keys())
+    dict_keys.sort()
+    return tuple([dict_keys[0], dict_keys[len(dict_keys) - 1]])

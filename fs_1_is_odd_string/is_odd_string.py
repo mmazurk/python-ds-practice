@@ -29,3 +29,7 @@ def is_odd_string(word):
     """
 
     # Hint: you may find the ord() function useful here
+		# find string length
+		# make list with range
+		# then add all the numbers using sum
+		# check if it's odd

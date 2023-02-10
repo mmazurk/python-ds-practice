@@ -18,3 +18,11 @@ def sum_up_diagonals(matrix):
         >>> sum_up_diagonals(m2)
         30
     """
+    sum = 0
+    for i in range(len(matrix[0])):
+        sum += matrix[i][i]
+        print("First iteration", sum)
+    for j in range(len(matrix[0])):
+        sum += matrix[j][-1-j]
+        print("Second iteration", sum)
+    return sum
