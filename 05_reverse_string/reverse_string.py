@@ -7,12 +7,13 @@ def reverse_string(phrase):
         >>> reverse_string('sauce')
         'ecuas'
     """
-    my_list = list(phrase)
-    return_string = ""
-    
-    reversed = my_list[::-1]
-    for i in reversed:
-        return_string += i
-    return return_string    
+    phrase_as_list = list(phrase)
+    phrase_as_list.reverse()
+    answer = "".join(phrase_as_list)
+    return answer
 
 
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+    print("You passed!")

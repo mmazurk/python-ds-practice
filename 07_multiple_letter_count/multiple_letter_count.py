@@ -1,3 +1,6 @@
+import doctest
+
+
 def multiple_letter_count(phrase):
     """Return dict of {ltr: frequency} from phrase.
 
@@ -7,9 +10,13 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
-    returnValue = {};
+    letter_dictionary = {}
     for letter in phrase:
-        if letter in returnValue:
-            break;
-        returnValue[letter] = phrase.count(letter)
-    return returnValue
+        letter_dictionary[letter] = letter_dictionary.get(letter, 0) + 1
+
+    return letter_dictionary
+
+
+if __name__ == "__main__":
+    doctest.testmod()
+    print("Test done, for better or worse!")
