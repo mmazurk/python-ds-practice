@@ -21,7 +21,6 @@ def number_compare(a, b):
     else:
         return "Numbers are equal"
 
-
 if __name__ == "__main__":
-    doctest.testmod()
-    print("Test done, for better or worse!")
+    import doctest
+    doctest.testmod(verbose=True)

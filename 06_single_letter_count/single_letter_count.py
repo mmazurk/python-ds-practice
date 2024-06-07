@@ -10,4 +10,10 @@ def single_letter_count(word, letter):
         >>> single_letter_count("Hello World", 'l')
         3
     """
-    return word.count(letter)
+    lowered_word = word.lower()
+    return lowered_word.count(letter)
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod(verbose=True)

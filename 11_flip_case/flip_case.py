@@ -11,16 +11,22 @@ def flip_case(phrase, to_swap):
         'AaaaHHH'
 
     """
-    upper_let = to_swap.upper()
-    lower_let = to_swap.lower()
-    return_value = []
+    swapped_list = []
 
     for letter in phrase:
-        if letter == upper_let:
-            return_value.append(letter.lower())
-        elif letter == lower_let:
-            return_value.append(letter.upper())
+        if (letter.lower() == to_swap.lower()):
+            if letter.isupper():
+                letter = letter.lower()
+            elif letter.islower():
+                letter = letter.upper()
+            swapped_list.append(letter)
         else:
-            return_value.append(letter)
-    return "".join(return_value) 
+            swapped_list.append(letter)
 
+    swapped = "".join(swapped_list)
+    return swapped
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod(verbose=True)

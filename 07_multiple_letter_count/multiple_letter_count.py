@@ -18,5 +18,5 @@ def multiple_letter_count(phrase):
 
 
 if __name__ == "__main__":
-    doctest.testmod()
-    print("Test done, for better or worse!")
+    import doctest
+    doctest.testmod(verbose=True)

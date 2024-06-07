@@ -12,5 +12,4 @@ def frequency(lst, search_term):
 
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()
-    print("You passed!")
+    doctest.testmod(verbose=True)

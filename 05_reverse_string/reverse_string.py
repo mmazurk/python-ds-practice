@@ -15,5 +15,4 @@ def reverse_string(phrase):
 
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()
-    print("You passed!")
+    doctest.testmod(verbose=True)

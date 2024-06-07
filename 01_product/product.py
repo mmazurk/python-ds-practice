@@ -7,9 +7,9 @@ def product(a, b):
         >>> product(2, -2)
         -4
     """
-    return a * a
+    return a * b
 
 
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=True)

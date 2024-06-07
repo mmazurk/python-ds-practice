@@ -21,5 +21,4 @@ def weekday_name(day_of_week):
 
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()
-    print("Test done, for better or worse!")
+    doctest.testmod(verbose=True)
